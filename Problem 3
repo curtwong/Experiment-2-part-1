@@ -1,0 +1,54 @@
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+#include <iomanip>
+
+using namespace std;
+
+int x,y;
+double V;
+
+int main()
+{
+	cout<<"Enter value for x and y:" << endl;
+	cin>> x >> y;
+	
+	switch(x)
+	{
+	case 1:
+		if (1 < y < 5)
+	{
+		V = x* y *2.5;
+	}
+	
+	else if (y >= 5)
+	{
+		V = x + (y / 2.5); 
+	}
+	
+	case 2:
+		if(y <= 5)
+	{
+		V  = ((x - y)/ 2.5);
+	}
+	
+	else if (y > 5)
+	{
+		V = x- (y + 2.5);
+	}
+	
+	else 
+	{
+		V = x + y + 2.5; 	
+	}
+	
+	cout<< "V = " << V << endl;
+	}
+	if (x > 2)
+	{
+		cout << "Invalid";
+	}
+
+	getch();
+	return 0;
+}

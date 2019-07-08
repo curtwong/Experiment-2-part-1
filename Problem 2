@@ -1,0 +1,32 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+
+{	
+
+	float debt, water, cost;
+
+	cout << "Enter unpaid amount from the past month: P";	
+	cin >> debt; 
+	cout << "Water Consumed: ";	
+	cin >>	water;
+
+	
+	if (debt > 0)
+		{
+			cost = 35 + (1.1 * water) + debt + 20;
+			cout << "It costs: P" << cost;
+		}
+
+	else
+		{
+			cost = 35 + (1.1 * water);
+			cout << "It costs: P" << cost;
+		}
+
+	getch();
+	return 0;
+}

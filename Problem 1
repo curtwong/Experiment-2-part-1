@@ -1,1 +1,45 @@
+#include <iostream>
+#include <conio.h>
 
+using namespace std;
+
+int main()
+
+{
+	char x;
+	float time, cost;
+	
+	cout << "Enter your package: ";
+	cin >> x;
+	cout << "Enter time usage: ";
+	cin >> time;
+
+	switch (x)
+	{
+	case 'A':
+	case 'a':
+		if (time >= 0 && time <= 10)
+			cout << "It costs: P995";
+		else if (time > 10)
+			cost = 995 + (time-10) *20;
+			cout << "It costs: P" << cost;
+			break;
+
+	case 'B':
+	case 'b':
+		if (time <= 20)
+			cout << "It costs: P1495";
+		else if (time > 20)
+			cost = 1495 + (time-20) *10;
+			cout << "It costs: P" << cost;
+			break;
+
+	case 'C':
+	case 'c':
+			cout << "It costs: P1995";
+			break;
+	}
+
+	getch();
+	return 0;
+}
